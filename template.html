@@ -1,0 +1,27 @@
+<!-- 
+
+这是用于发送邮件的模板，
+模板使用 Jinjia2 模板语言编写
+参见： https://docs.pythontab.com/jinja/jinja2/index.html 
+
+在模板中， item 表示一个oa条目
+可以通过 item.page_url 获取页面url
+可以通过 item.title 获取标题
+可以通过 item.author 获取发布单位
+可以通过 item.date 获取发布日期
+
+
+-->
+
+
+
+<ul>
+    {% for item in items %}
+        <li>
+            <a href="{{ item.page_url }}">{{ item.title }}</a> - {{ item.author }} - {{ item.date }}
+        </li>
+    {% endfor %}
+
+</ul>
+<hr>
+<p style="color:red">本邮件由自动化程序生成，请勿回复！</p>
