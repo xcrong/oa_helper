@@ -17,7 +17,7 @@
 1. clone 本仓库到本地
 
 ```shell
-git clone ...
+git clone https://github.com/gty20010709/oa_helper 
 # 也可以点击右上角的 Code - Downlaod ZIP
 ```
 
